@@ -21,7 +21,7 @@ def driver():
 def test_properlogin_validation(driver):
     driver.get("https://practicetestautomation.com/practice-test-login/")
 
-    driver.find_element(By.XPATH, ".//input[contains(@id,'username')]").send_keys("student")
+    #driver.find_element(By.XPATH, ".//input[contains(@id,'username')]").send_keys("student")
     driver.find_element(By.XPATH, ".//input[contains(@id,'password')]").send_keys("Password123")
     driver.find_element(By.ID,"submit").click()
 
