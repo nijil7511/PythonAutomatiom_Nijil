@@ -33,8 +33,8 @@ def test_properlogin_validation(driver):
         assert True
 
     except:
-        print("Not Logged In Sucessfully")
-        assert False
+        print("Unable to Log In Sucessfully")
+        assert False 
     time.sleep(10)
     driver.quit()
 
