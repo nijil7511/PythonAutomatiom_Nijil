@@ -10,7 +10,7 @@ from selenium.webdriver.support import expected_conditions as EC
 @pytest.fixture
 def driver():
 
-    options = Options
+    options = Optio
     options.add_experimental_option("detach", True)
     driver = webdriver.Chrome(options=options)
     driver.maximize_window()
