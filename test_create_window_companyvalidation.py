@@ -17,7 +17,7 @@ def driver():
 
     options = Options()
     options.add_experimental_option("detach", True)
-    driver = webdriver.Chrome(options=options)
+    driver = webdriver.Chrome()
     driver.maximize_window()
     yield driver
 
