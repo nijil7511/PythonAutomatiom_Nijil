@@ -36,9 +36,9 @@ def test_window(driver):
 
     if text == "Company required":
         print("Company Mandatory Validation Successfull")
-        assert False, "Validation Displayed!!"
+        assert False, "Validation Displayed!"
     else:
         print("Company Mandatory Validation Successfull")
-        assert True, "Validation Not Displayed!!"
+        assert True, "Validation Not Displayed!"
         time.sleep(2)
         driver.quit()
