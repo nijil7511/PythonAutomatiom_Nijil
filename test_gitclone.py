@@ -29,11 +29,11 @@ def test_properlogin_validation(driver):
     try:
         error_message = WebDriverWait(driver, 5).until(EC.visibility_of_element_located((By.XPATH, ".//h1[contains(.,'Logged In Successfully')]")))
 
-        print("Pass – Logged In Sucessfully!!")
+        print("Pass – Logged In Sucessfully!")
         assert True
 
     except:
-        print("Unable to Log In. Test Failed!!")
+        print("Unable to Log In. Test Failed!")
         assert False 
     time.sleep(10)
     driver.quit()
